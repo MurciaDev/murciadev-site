@@ -1,5 +1,3 @@
-# Components
+# components
 
-```node
-pnpm run components:generate <component-name>
-```
+Catalog of components based our design system

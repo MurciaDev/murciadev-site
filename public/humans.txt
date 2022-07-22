@@ -26,6 +26,6 @@
 
 /* SITE */
   Language: Spanish
-  Last update: 2022/05/11
-  Standards: HTML and vanilla CSS (don't over-engineer for this)
+  Last update: 22/07/2022
+  Standards: Next.js / React / CSS modules
   Software: Visual Studio Code

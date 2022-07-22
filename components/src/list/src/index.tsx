@@ -6,7 +6,7 @@ interface ListProps {
 
 export default function List({ items }: ListProps) {
   return (
-    <ul className={styles.list}>
+    <ul className={styles.wrapper}>
       {items.map((item) => (
         <li key={item.key} className={styles.item}>
           {item}

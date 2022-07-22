@@ -3,12 +3,6 @@
   "version": "1.0.0",
   "private": true,
   "main": "./index",
-  "bin": {
-    "murciadev-components": "bin/components-generate.js"
-  },
-  "scripts": {
-    "components:generate": "node bin/components-generate.js"
-  },
   "peerDependencies": {
     "react": "^18",
     "react-dom": "^18"

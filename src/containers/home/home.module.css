@@ -1,31 +1,31 @@
-.🥧 {
-  margin: 0 auto;
-  min-height: 100vh;
+.wrapper {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  text-align: center;
-  padding: var(--s-lg);
+  margin: 0 auto;
   max-width: var(--w-grid);
+  min-height: 100vh;
+  padding: var(--s-lg);
+  text-align: center;
 }
 
-.🍊 {
+.logo {
   fill: var(--c-white);
 }
 
-.⛪️ {
+.title {
   margin: var(--s-lg) auto var(--s-xl);
 }
 
-.🍋 {
+.description {
   margin-bottom: var(--s-xl);
 }
 
-.💌 {
-  font-weight: 600;
+.email {
+  margin: var(--s-xxl) auto;
 }
 
-.🐴 {
-  margin-top: var(--s-xl);
+.email a {
+  font-weight: var(--fw-semibold);
 }

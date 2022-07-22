@@ -1,22 +1,29 @@
 .button {
-  background: #1d212a;
-  border-radius: 8px;
+  --bg-button: var(--c-secondary-light);
+  --br-button: var(--br-base);
+  --c-button: var(--c-white);
+  --fs-button: var(--fs-global);
+  --fw-button: var(--fw-semibold);
+  --p-button: var(--s-md);
+
+  background: var(--bg-button);
+  border-radius: var(--br-button);
   border: 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
-  color: #fff;
+  color: var(--c-button);
   cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  padding: 16px;
+  font-size: var(--fs-button);
+  font-weight: var(--fw-button);
+  padding: var(--p-button);
   text-decoration: none;
-  transition: background 0.15s ease;
 }
 
 .button:hover {
-  background: #0070f3;
+  --bg-button: var(--c-secondary-dark);
 }
 
-.button--secondary,
+.button--secondary {
+  --bg-button: var(--c-primary-light);
+}
 .button--secondary:hover {
-  background: #fd3f3f;
+  --bg-button: var(--c-primary-dark);
 }

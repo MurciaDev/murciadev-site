@@ -4,7 +4,7 @@ html {
 }
 
 body {
-  background: var(--c-primary);
+  background: var(--c-primary-light);
   color: var(--c-white);
   font-family: var(--ff-global);
   font-size: var(--fs-global);

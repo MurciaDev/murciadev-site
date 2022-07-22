@@ -1,0 +1,21 @@
+{
+  "name": "@murciadev/components",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./index",
+  "bin": {
+    "murciadev-components": "bin/components-generate.js"
+  },
+  "scripts": {
+    "components:generate": "node bin/components-generate.js"
+  },
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  },
+  "dependencies": {
+    "@murciadev/ui-button": "workspace:*",
+    "@murciadev/ui-list": "workspace:*",
+    "classnames": "2.3.1"
+  }
+}

@@ -1,0 +1,19 @@
+:root {
+  --c-primary: #cc2727;
+  --c-secondary: #720808;
+  --c-white: #ffffff;
+  --c-gray: #d4d4d4;
+
+  --ff-global: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  --fs-global: 16px;
+  --fs-heading: 32px;
+  --fw-heading: 600;
+
+  --s-xs: 4px;
+  --s-sm: 8px;
+  --s-md: 16px;
+  --s-lg: 24px;
+  --s-xl: 32px;
+  --w-grid: 920px;
+}

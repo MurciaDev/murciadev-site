@@ -1,0 +1,31 @@
+# Created by the organizers of Murcia Dev with much love!
+
+/* TEAM */
+
+  In alphabetical order:
+
+  Frontend developer: Gabriel Perales Portillo
+  Twitter: @g_perales
+  From: Murcia, Spain
+
+  Frontend developer: Juan Carlos Ruiz
+  Twitter: @klaufel
+  From: Murcia, Spain
+
+/* THANKS */
+
+  We are not the first organizers of Murcia Frontend,
+  so we thank the people who made this possible:
+
+  Jose David Cano (@gorzas)
+  Alberto Lopez (@earthlandto)
+  Luis Lorente (@luisetelo)
+
+  All from Murcia, thanks!
+
+
+/* SITE */
+  Language: Spanish
+  Last update: 2022/05/11
+  Standards: HTML and vanilla CSS (don't over-engineer for this)
+  Software: Visual Studio Code

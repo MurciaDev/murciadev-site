@@ -1,0 +1,10 @@
+{
+  "name": "@murciadev/ui-list",
+  "version": "1.0.0",
+  "main": "./src/index.tsx",
+  "private": true,
+  "peerDependencies": {
+    "react": "^18",
+    "react-dom": "^18"
+  }
+}

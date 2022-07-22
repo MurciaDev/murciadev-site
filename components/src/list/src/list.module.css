@@ -1,0 +1,17 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  margin: var(--s-xl) auto;
+  padding: 0;
+}
+
+.item {
+  padding: var(--s-sm) var(--s-xs);
+}
+
+.item:not(:last-child)::after {
+  content: '-';
+  padding-left: var(--s-sm);
+}

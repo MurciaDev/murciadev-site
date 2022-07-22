@@ -1,0 +1,14 @@
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: var(--s-xxxl);
+  padding: var(--s-xxxl) 136px;
+}
+
+.article {
+  flex-basis: 50%;
+}
+
+.article p:last-of-type {
+  margin-bottom: var(--s-xxxl);
+}

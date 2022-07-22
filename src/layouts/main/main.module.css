@@ -1,0 +1,25 @@
+.main {
+  padding: var(--s-xxxl) 0;
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__container {
+  padding: var(--s-xxl) var(--s-md);
+  width: 100%;
+  max-width: var(--w-grid);
+}
+
+.footer {
+  --bg-footer: var(--c-gray);
+
+  width: 100%;
+  background: var(--bg-footer);
+  padding: var(--s-xl) var(--s-md);
+}

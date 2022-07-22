@@ -4,8 +4,8 @@ html {
 }
 
 body {
-  background: var(--c-primary-light);
-  color: var(--c-white);
+  background: var(--c-white);
+  color: var(--c-dark);
   font-family: var(--ff-global);
   font-size: var(--fs-global);
   margin: 0;
@@ -203,17 +203,18 @@ h6 {
   text-transform: uppercase;
 }
 
-a,
-a:hover,
-a:focus {
-  --c: var(--c-white);
+a {
+  --c: var(--c-dark);
   color: var(--c);
-  padding: var(--s-xs);
   text-decoration: none;
-  border-bottom: 1px dotted;
 }
 
 a:hover,
 a:focus {
   --c: var(--c-gray);
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: var(--s-xl);
 }

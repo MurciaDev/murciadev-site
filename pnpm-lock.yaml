@@ -5,7 +5,9 @@ importers:
   .:
     specifiers:
       '@murciadev/components': workspace:*
+      '@murciadev/config': workspace:*
       '@murciadev/theme': workspace:*
+      '@types/css-modules': 1.0.2
       '@types/node': 18.0.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
@@ -20,6 +22,7 @@ importers:
       typescript: 4.7.4
     dependencies:
       '@murciadev/components': link:components
+      '@murciadev/config': link:config
       '@murciadev/theme': link:theme
       next: 12.2.3_biqbaboplfbrettd7655fr4n2y
       next-i18next: 11.2.2_53oqlnqnxhbetdy4ljlkkvmoby
@@ -27,6 +30,7 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     devDependencies:
+      '@types/css-modules': 1.0.2
       '@types/node': 18.0.6
       '@types/react': 18.0.15
       '@types/react-dom': 18.0.6
@@ -38,17 +42,30 @@ importers:
   components:
     specifiers:
       '@murciadev/ui-button': workspace:*
+      '@murciadev/ui-container': workspace:*
       '@murciadev/ui-list': workspace:*
+      '@murciadev/ui-logo': workspace:*
       classnames: 2.3.1
     dependencies:
       '@murciadev/ui-button': link:src/button
+      '@murciadev/ui-container': link:src/container
       '@murciadev/ui-list': link:src/list
+      '@murciadev/ui-logo': link:src/logo
       classnames: 2.3.1
 
   components/src/button:
     specifiers: {}
 
+  components/src/container:
+    specifiers: {}
+
   components/src/list:
+    specifiers: {}
+
+  components/src/logo:
+    specifiers: {}
+
+  config:
     specifiers: {}
 
   theme:
@@ -259,6 +276,10 @@ packages:
     dependencies:
       tslib: 2.4.0
     dev: false
+
+  /@types/css-modules/1.0.2:
+    resolution: {integrity: sha512-tyqlt2GtEBdsxJylh78zSxI/kOJK5Iz8Ta4Fxr8KLTP8mD/IgMa84D8EKPS/AWCp+MDoctgJyikrVWY28GKmcg==}
+    dev: true
 
   /@types/hoist-non-react-statics/3.3.1:
     resolution: {integrity: sha512-iMIqiko6ooLrTh1joXodJK5X9xeEALT1kM5G3ZLhD3hszxBdIEd5C75U834D9mLcINgD4OyZf5uQXjkuYydWvA==}

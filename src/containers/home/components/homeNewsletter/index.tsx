@@ -1,9 +1,14 @@
 import Image from 'next/image';
+import config from '@murciadev/config';
 import { Button } from '@murciadev/components';
 
 import styles from './homeNewsletter.module.css';
 
 export default function ContainerHomeNewsletter() {
+  const {
+    links: { newsletter },
+  } = config;
+
   return (
     <section className={styles.wrapper}>
       <div>
@@ -24,7 +29,12 @@ export default function ContainerHomeNewsletter() {
           Si quieres estar al tanto de todas las novedades que hacemos y estamos
           preparando, ¡tenemos una newsletter muy molona!
         </p>
-        <Button as="a" href="#">
+        <Button
+          as="a"
+          href={newsletter}
+          target="_blank"
+          rel="noopener nofollow"
+        >
           ¡Suscríbete a nuestra newsletter!
         </Button>
       </article>

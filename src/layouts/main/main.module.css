@@ -4,22 +4,16 @@
 }
 
 .header {
-  width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.header__container {
+  display: flex;
   padding: var(--s-xxl) var(--s-md);
   width: 100%;
-  max-width: var(--w-grid);
 }
 
 .footer {
   --bg-footer: var(--c-gray);
 
-  width: 100%;
   background: var(--bg-footer);
   padding: var(--s-xl) var(--s-md);
+  width: 100%;
 }

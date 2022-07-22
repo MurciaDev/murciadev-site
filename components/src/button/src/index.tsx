@@ -1,14 +1,14 @@
 import {
   createElement,
-  HTMLAttributeAnchorTarget,
-  HTMLAttributeReferrerPolicy,
+  type ReactNode,
+  type HTMLAttributeAnchorTarget,
 } from 'react';
 import cx from 'classnames';
 
 import styles from './button.module.css';
 
 interface ButtonProps {
-  children: React.ReactNode;
+  children: ReactNode;
   design?: 'primary' | 'secondary';
   as: 'button' | 'a';
   href?: string;

@@ -34,4 +34,5 @@
   --br-base: var(--br-rounded);
 
   --w-grid: 1608px;
+  --w-grid-narrow: 860px;
 }

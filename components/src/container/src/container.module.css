@@ -1,5 +1,10 @@
-.wrapper {
+.container {
+  --mw-container: var(--w-grid);
   margin: 0 auto;
-  max-width: var(--w-grid);
+  max-width: var(--mw-container);
   width: 100%;
+}
+
+.container--narrow {
+  --mw-container: var(--w-grid-narrow);
 }

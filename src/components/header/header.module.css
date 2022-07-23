@@ -1,0 +1,6 @@
+.header {
+  align-items: center;
+  display: flex;
+  padding: var(--s-xxl) var(--s-md);
+  width: 100%;
+}

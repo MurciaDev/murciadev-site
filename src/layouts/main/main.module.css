@@ -2,18 +2,3 @@
   padding: var(--s-xxxl) 0;
   width: 100%;
 }
-
-.header {
-  align-items: center;
-  display: flex;
-  padding: var(--s-xxl) var(--s-md);
-  width: 100%;
-}
-
-.footer {
-  --bg-footer: var(--c-gray);
-
-  background: var(--bg-footer);
-  padding: var(--s-xl) var(--s-md);
-  width: 100%;
-}

@@ -1,0 +1,24 @@
+.menu {
+  display: inline-flex;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  display: inline-flex;
+}
+
+.item:not(:last-of-type) {
+  --p-item: var(--s-sm);
+  padding-right: var(--p-item);
+}
+
+.item:not(:last-of-type)::after {
+  content: '-';
+  padding-left: var(--p-item);
+}

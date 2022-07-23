@@ -211,7 +211,7 @@ a {
 
 a:hover,
 a:focus {
-  --c: var(--c-gray);
+  --c: var(--c-gray-light);
 }
 
 p {

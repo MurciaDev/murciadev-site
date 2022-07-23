@@ -1,6 +1,24 @@
 .header {
-  align-items: center;
-  display: flex;
-  padding: var(--s-xxl) var(--s-md);
   width: 100%;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: var(--w-grid);
+  padding: var(--s-xl) var(--p-gutter);
+}
+
+.logo {
+  display: flex;
+  margin-right: var(--s-xl);
+  margin-bottom: calc(var(--s-xxs) * -1);
+}
+
+.email {
+  margin-left: auto;
+  color: var(--c-gray-dark);
+  font-size: 20px;
 }

@@ -1,22 +1,28 @@
 import Link from 'next/link';
-import { Container, Logo } from '@murciadev/components';
+import config from '@murciadev/config';
+import { Logo } from '@murciadev/components';
+
+import Menu from '../menu';
 
 import styles from './header.module.css';
 
 export default function Header() {
+  const { community } = config;
+  const { email } = community;
+
   return (
     <header className={styles.header}>
-      <Container>
+      <div className={styles.container}>
         <Link href="/" passHref>
-          <a>
+          <a className={styles.logo}>
             <Logo />
           </a>
         </Link>
-
-        <Link href="/code-of-conduct" passHref>
-          <a>Código de conducta</a>
-        </Link>
-      </Container>
+        <Menu />
+        <a className={styles.email} href={`mailto:${email}`}>
+          {email}
+        </a>
+      </div>
     </header>
   );
 }

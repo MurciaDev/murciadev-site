@@ -1,5 +1,5 @@
 .wrapper {
-  background: var(--c-gray);
+  background: var(--c-gray-light);
   border-radius: var(--s-xl);
   display: flex;
   justify-content: space-around;

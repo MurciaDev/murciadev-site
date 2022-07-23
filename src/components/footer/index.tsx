@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { Container, Logo } from '@murciadev/components';
 import config from '@murciadev/config';
 
@@ -13,6 +14,9 @@ export default function Footer() {
         <Logo />
         <br />
         <a href={`mailto:${email}`}>{email}</a>
+        <Link href="/code-of-conduct" passHref>
+          <a>Código de conducta</a>
+        </Link>
       </Container>
     </footer>
   );

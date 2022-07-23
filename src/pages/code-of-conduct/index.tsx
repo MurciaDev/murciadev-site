@@ -1,15 +1,18 @@
 import markdownService from 'markdown-service';
 import ContainerStatic, {
-  type IContainerStatic,
+  type ContainerStaticProps,
 } from '../../containers/static';
 
-export default function PageCodeOfConduct({ content, head }: IContainerStatic) {
+export default function PageCodeOfConduct({
+  content,
+  head,
+}: ContainerStaticProps) {
   return <ContainerStatic content={content} head={head} />;
 }
 
 export async function getStaticProps() {
   const { content } = await markdownService(
-    'http://localhost:3000/texts/code-of-conduct.md'
+    'https://raw.githubusercontent.com/MurciaDev/CODE_OF_CONDUCT/main/README.md'
   );
 
   const head = { title: 'Código de conducta', description: 'lorem ipsum' };

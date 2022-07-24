@@ -8,6 +8,7 @@ body {
   color: var(--c-dark);
   font-family: var(--ff-global);
   font-size: var(--fs-global);
+  line-height: var(--lh-global);
   margin: 0;
   padding: 0;
 }

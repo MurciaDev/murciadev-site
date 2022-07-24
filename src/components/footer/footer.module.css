@@ -4,4 +4,49 @@
   background: var(--bg-footer);
   padding: var(--s-xl) var(--s-md);
   width: 100%;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.logo {
+  display: flex;
+  margin-bottom: var(--s-md);
+}
+
+.logo svg {
+  width: 240px;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  align-items: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: var(--s-md) 0 0;
+}
+
+.item {
+  display: inline-flex;
+}
+
+.item:not(:last-of-type) {
+  --p-item: var(--s-sm);
+  padding-right: var(--p-item);
+}
+
+.item:not(:last-of-type)::after {
+  content: '-';
+  padding-left: var(--p-item);
 }

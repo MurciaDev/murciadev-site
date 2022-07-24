@@ -15,8 +15,8 @@ export default function Newsletter() {
         <Image
           src="/images/megaphone-speaker.webp"
           alt="Megáfono"
-          width={568}
-          height={538}
+          width={420}
+          height={440}
         />
       </div>
       <article className={styles.article}>

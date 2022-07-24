@@ -21,6 +21,7 @@
 
   --ff-global: 'Jost', sans-serif;
   --fs-global: 22px;
+  --lh-global: 32px;
   --fs-heading: 32px;
   --fw-heading: var(--fw-semibold);
 

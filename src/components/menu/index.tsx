@@ -3,21 +3,17 @@ import Link from 'next/link';
 import styles from './menu.module.css';
 
 const menuRoutes = [
-  {
-    url: '/talks',
-    title: 'charlas',
-  },
-  {
-    url: '/events',
-    title: 'eventos',
-  },
+  // {
+  //   url: '/community',
+  //   title: 'comunidad',
+  // },
+  // {
+  //   url: '/events',
+  //   title: 'eventos',
+  // },
   {
     url: '/tech-hub',
     title: 'tech hub',
-  },
-  {
-    url: '/community',
-    title: 'comunidad',
   },
 ];
 

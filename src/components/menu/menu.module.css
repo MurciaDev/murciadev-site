@@ -14,7 +14,7 @@
 }
 
 .item:not(:last-of-type) {
-  --p-item: var(--s-sm);
+  --p-item: var(--s-md);
   padding-right: var(--p-item);
 }
 

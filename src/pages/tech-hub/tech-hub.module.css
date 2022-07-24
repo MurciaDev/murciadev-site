@@ -43,6 +43,13 @@
 }
 
 .table_link {
-  font-size: 20px;
   color: var(--c-gray-dark);
+  float: right;
+  font-size: 20px;
+}
+
+.contribution {
+  margin: var(--s-xxxl) 0;
+  padding: var(--s-xxxl) 0;
+  text-align: center;
 }

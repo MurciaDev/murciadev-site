@@ -55,6 +55,10 @@
 }
 
 @media (min-width: 768px) {
+  .header {
+    flex-direction: row;
+  }
+
   .header article {
     flex-basis: 50%;
     padding-top: var(--s-xxl);

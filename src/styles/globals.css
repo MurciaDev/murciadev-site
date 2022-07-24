@@ -201,6 +201,7 @@ h5,
 h6 {
   font-size: var(--fs-heading);
   font-weight: var(--fw-heading);
+  line-height: var(--lh-heading);
 }
 
 a {

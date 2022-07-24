@@ -40,11 +40,11 @@
 .table td,
 .table th {
   padding: var(--s-md) var(--s-xl);
+  white-space: nowrap;
 }
 
 .table_link {
   color: var(--c-gray-dark);
-  float: right;
   font-size: 20px;
 }
 

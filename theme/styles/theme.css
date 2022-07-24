@@ -22,7 +22,9 @@
   --ff-global: 'Jost', sans-serif;
   --fs-global: 22px;
   --lh-global: 32px;
+
   --fs-heading: 32px;
+  --lh-heading: 40px;
   --fw-heading: var(--fw-semibold);
 
   --s-xxs: 2px;

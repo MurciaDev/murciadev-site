@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Container } from '@murciadev/components';
-import ContainerHomeNewsletter from '../home/components/homeNewsletter';
+import Newsletter from '../../components/newsletter';
 
 export interface ContainerStaticProps {
   head?: { [key: string]: string } | null;
@@ -19,7 +19,7 @@ export default function ContainerHome({ head, content }: ContainerStaticProps) {
         <div dangerouslySetInnerHTML={{ __html: content }} />
       </Container>
       <Container>
-        <ContainerHomeNewsletter />
+        <Newsletter />
       </Container>
     </>
   );

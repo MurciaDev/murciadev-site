@@ -1,0 +1,24 @@
+.table {
+  border-radius: var(--br-xl);
+  overflow: hidden;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table thead {
+  background: var(--c-gray-light);
+  text-align: left;
+}
+
+.table tbody {
+  border: 1px solid var(--c-gray-light);
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--c-gray-light);
+}
+
+.table td,
+.table th {
+  padding: var(--s-md) var(--s-xl);
+}

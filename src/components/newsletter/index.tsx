@@ -2,9 +2,9 @@ import Image from 'next/image';
 import config from '@murciadev/config';
 import { Button } from '@murciadev/components';
 
-import styles from './homeNewsletter.module.css';
+import styles from './newsletter.module.css';
 
-export default function ContainerHomeNewsletter() {
+export default function Newsletter() {
   const {
     links: { newsletter },
   } = config;
@@ -21,9 +21,10 @@ export default function ContainerHomeNewsletter() {
       </div>
       <article className={styles.article}>
         <p>
-          Por ahora, estamos tratando de organizar una comunidad en línea
-          alrededor de nuestro servidor Discord, pero en el futuro, queremos
-          realizar charlas y talleres sobre desarrollo frontend/backend/mobile.
+          Estamos muy activos con nuestra comunidad en línea alrededor de
+          nuestro servidor Discord, pero también realizamos charlas, talleres y
+          cualquier tipo de evento relacionado sobre el desarrollo
+          frontend/backend/mobile.
         </p>
         <p>
           Si quieres estar al tanto de todas las novedades que hacemos y estamos

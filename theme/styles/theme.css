@@ -33,6 +33,7 @@
   --s-xxxl: 48px;
 
   --br-rounded: 9999px;
+  --br-xl: var(--s-xl);
   --br-base: var(--br-rounded);
 
   --w-grid: 1608px;

@@ -1,4 +1,5 @@
 import markdownService from 'markdown-service';
+import config from '@murciadev/config';
 import ContainerStatic, {
   type ContainerStaticProps,
 } from '../../containers/static';
@@ -11,9 +12,8 @@ export default function PageCodeOfConduct({
 }
 
 export async function getStaticProps() {
-  const { content } = await markdownService(
-    'https://raw.githubusercontent.com/MurciaDev/CODE_OF_CONDUCT/main/README.md'
-  );
+  const markdownUrl = `${config.GITHUB.REPOSITORY_RAW_URL}/CODE_OF_CONDUCT/main/README.md`;
+  const { content } = await markdownService(markdownUrl);
 
   const head = { title: 'Código de conducta', description: 'lorem ipsum' };
 

@@ -4,6 +4,8 @@ import { Button } from '@murciadev/components';
 
 import styles from './homeCover.module.css';
 
+import imageCharacterLaptop from '../../../../../public/images/character-laptop.webp';
+
 export default function ContainerHomeCover() {
   const {
     links: { discord },
@@ -23,10 +25,9 @@ export default function ContainerHomeCover() {
       </article>
       <div>
         <Image
-          src="/images/character-laptop.webp"
           alt="Persona con un ordenador portátil sentada en un sillón"
-          width={500}
-          height={686}
+          placeholder="blur"
+          src={imageCharacterLaptop}
         />
       </div>
     </section>

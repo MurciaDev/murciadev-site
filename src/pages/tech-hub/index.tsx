@@ -3,7 +3,7 @@ import config from '@murciadev/config';
 import { Container, Button } from '@murciadev/components';
 
 import Newsletter from '../../components/newsletter';
-
+import imageCloudHub from '../../../public/images/cloud-hub.webp';
 import styles from './tech-hub.module.css';
 
 type company = {
@@ -53,9 +53,8 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
           <div className={styles.image}>
             <Image
               alt="Nube con un hub"
-              height={592}
-              src="/images/cloud-hub.webp"
-              width={520}
+              src={imageCloudHub}
+              placeholder="blur"
             />
           </div>
         </section>

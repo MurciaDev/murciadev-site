@@ -4,6 +4,8 @@ import { Button } from '@murciadev/components';
 
 import styles from './newsletter.module.css';
 
+import imageMegaphoneSpeaker from '../../../public/images/megaphone-speaker.webp';
+
 export default function Newsletter() {
   const {
     links: { newsletter },
@@ -12,12 +14,7 @@ export default function Newsletter() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.image}>
-        <Image
-          src="/images/megaphone-speaker.webp"
-          alt="Megáfono"
-          width={420}
-          height={440}
-        />
+        <Image src={imageMegaphoneSpeaker} alt="Megáfono" placeholder="blur" />
       </div>
       <article className={styles.article}>
         <p>

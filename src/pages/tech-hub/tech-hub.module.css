@@ -70,5 +70,6 @@
 
   .image {
     display: flex;
+    margin-left: auto;
   }
 }

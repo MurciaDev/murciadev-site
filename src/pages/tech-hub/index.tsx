@@ -89,7 +89,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
                           {remoteWork ? remoteDictionary[remoteWork] : '?'}
                         </td>
                         <td>{stack || '?'}</td>
-                        <td>
+                        <td width="35%">
                           {address && location ? (
                             <>
                               {location}.{' '}

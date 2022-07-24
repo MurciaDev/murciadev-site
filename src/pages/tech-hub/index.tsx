@@ -51,11 +51,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
             </p>
           </article>
           <div className={styles.image}>
-            <Image
-              alt="Nube con un hub"
-              src={imageCloudHub}
-              placeholder="blur"
-            />
+            <Image alt="Nube con un hub" src={imageCloudHub} />
           </div>
         </section>
         {companiesList.map(({ category, companies }) => (

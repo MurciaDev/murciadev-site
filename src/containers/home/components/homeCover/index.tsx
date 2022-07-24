@@ -26,7 +26,6 @@ export default function ContainerHomeCover() {
       <div>
         <Image
           alt="Persona con un ordenador portátil sentada en un sillón"
-          placeholder="blur"
           src={imageCharacterLaptop}
         />
       </div>

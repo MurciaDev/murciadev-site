@@ -37,9 +37,9 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
               de Murcia.
             </p>
             <p>
-              Si conoces alguna empresa más o puedes poner algún dato más sobre
-              las que ya existen en el listado anímate y actualiza los datos,
-              puedes hacerlo{' '}
+              Si conoces alguna empresa más o puedes añadir algún dato más sobre
+              las que ya existen en el listado, anímate y actualiza la
+              información, puedes hacerlo{' '}
               <a
                 href="https://github.com/MurciaDev/murcia-tech-hub/edit/main/companies.json"
                 target="_blank"

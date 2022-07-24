@@ -3,12 +3,16 @@
   flex-direction: column;
 }
 
-.image {
-  display: none;
+.header a {
+  text-decoration: underline;
 }
 
 .header article h1 {
   font-size: 32px;
+}
+
+.image {
+  display: none;
 }
 
 .table_wrapper {

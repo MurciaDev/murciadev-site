@@ -1,6 +1,25 @@
-.table {
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header article {
+  flex-basis: 50%;
+  padding-top: var(--s-xxl);
+}
+
+.header article h1 {
+  font-size: 60px;
+}
+
+.table_wrapper {
   border-radius: var(--br-xl);
   overflow: hidden;
+  border: 2px solid var(--c-gray-light);
+  margin-bottom: var(--s-xxxl);
+}
+
+.table {
   border-collapse: collapse;
   width: 100%;
 }
@@ -10,15 +29,20 @@
   text-align: left;
 }
 
-.table tbody {
-  border: 1px solid var(--c-gray-light);
-}
-
 .table tbody tr:nth-child(even) {
   background: var(--c-gray-light);
+}
+
+.table tbody tr:hover {
+  background: var(--c-gray-medium);
 }
 
 .table td,
 .table th {
   padding: var(--s-md) var(--s-xl);
+}
+
+.table_link {
+  font-size: 20px;
+  color: var(--c-gray-dark);
 }

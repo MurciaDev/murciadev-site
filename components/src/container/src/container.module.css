@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.container--inner {
+  --mw-container: var(--w-grid-inner);
+}
+
 .container--narrow {
   --mw-container: var(--w-grid-narrow);
 }

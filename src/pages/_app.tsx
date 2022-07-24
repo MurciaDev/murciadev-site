@@ -5,14 +5,14 @@ import LayoutMain from '../layouts/main';
 import '@murciadev/theme';
 import '../styles/globals.css';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export default function MyApp({ Component, pageProps }: AppProps) {
   return (
     <LayoutMain>
       <Head>
         <title>MurciaDev</title>
         <meta
           name="description"
-          content="Apasionados del desarrollo frontend y de las tecnologías web en Murcia y alrededores."
+          content="Apasionadas y apasionados del desarrollo frontend y de las tecnologías web en Murcia y alrededores."
         />
         <link
           rel="apple-touch-icon"
@@ -41,5 +41,3 @@ function MyApp({ Component, pageProps }: AppProps) {
     </LayoutMain>
   );
 }
-
-export default MyApp;

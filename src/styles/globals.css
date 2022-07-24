@@ -200,7 +200,6 @@ h5,
 h6 {
   font-size: var(--fs-heading);
   font-weight: var(--fw-heading);
-  text-transform: uppercase;
 }
 
 a {
@@ -209,9 +208,8 @@ a {
   text-decoration: none;
 }
 
-a:hover,
-a:focus {
-  --c: var(--c-gray-light);
+a:hover {
+  --c: var(--c-gray-dark);
 }
 
 p {

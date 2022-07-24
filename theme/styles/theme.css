@@ -4,6 +4,7 @@
   --c-secondary-light: #2a1d1f;
   --c-secondary-dark: #141011;
   --c-gray-light: #f3f3f3;
+  --c-gray-medium: #e4e4e4;
   --c-gray-dark: #737373;
   --c-white: #ffffff;
   --c-black: #000000;
@@ -37,6 +38,7 @@
   --br-base: var(--br-rounded);
 
   --w-grid: 1608px;
+  --w-grid-inner: 1286px;
   --w-grid-narrow: 860px;
 
   --p-gutter: var(--s-md);

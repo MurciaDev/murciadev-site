@@ -5,7 +5,7 @@ import styles from './container.module.css';
 
 interface ContainerProps {
   children: ReactNode;
-  design?: 'normal' | 'narrow';
+  design?: 'normal' | 'inner' | 'narrow';
 }
 
 export default function Container({

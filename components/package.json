@@ -3,13 +3,16 @@
   "version": "1.0.0",
   "private": true,
   "main": "./index",
+  "dependencies": {
+    "@murciadev/config": "workspace:*",
+    "@murciadev/ui-button": "workspace:*",
+    "@murciadev/ui-container": "workspace:*",
+    "@murciadev/ui-list": "workspace:*",
+    "@murciadev/ui-logo": "workspace:*",
+    "classnames": "2.3.1"
+  },
   "peerDependencies": {
     "react": "^18",
     "react-dom": "^18"
-  },
-  "dependencies": {
-    "@murciadev/ui-button": "workspace:*",
-    "@murciadev/ui-list": "workspace:*",
-    "classnames": "2.3.1"
   }
 }

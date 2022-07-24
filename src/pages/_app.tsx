@@ -1,13 +1,13 @@
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
-import { appWithTranslation } from 'next-i18next';
+import LayoutMain from '../layouts/main';
 
 import '@murciadev/theme';
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <>
+    <LayoutMain>
       <Head>
         <title>MurciaDev</title>
         <meta
@@ -38,8 +38,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <link rel="author" type="text/plain" href="humans.txt" />
       </Head>
       <Component {...pageProps} />
-    </>
+    </LayoutMain>
   );
 }
 
-export default appWithTranslation(MyApp);
+export default MyApp;

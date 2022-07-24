@@ -4,13 +4,14 @@
   --c-button: var(--c-white);
   --fs-button: var(--fs-global);
   --fw-button: var(--fw-semibold);
-  --p-button: var(--s-md);
+  --p-button: var(--s-lg) var(--s-xxl);
 
   background: var(--bg-button);
   border-radius: var(--br-button);
   border: 0;
   color: var(--c-button);
   cursor: pointer;
+  display: inline-flex;
   font-size: var(--fs-button);
   font-weight: var(--fw-button);
   padding: var(--p-button);
@@ -18,6 +19,7 @@
 }
 
 .button:hover {
+  --c-button: var(--c-white);
   --bg-button: var(--c-secondary-dark);
 }
 

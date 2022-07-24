@@ -3,8 +3,9 @@
   --c-primary-dark: #9f1d1d;
   --c-secondary-light: #2a1d1f;
   --c-secondary-dark: #141011;
+  --c-gray-light: #f3f3f3;
+  --c-gray-dark: #737373;
   --c-white: #ffffff;
-  --c-gray: #d4d4d4;
   --c-black: #000000;
 
   --fw-thin: 100;
@@ -17,12 +18,12 @@
   --fw-extrabold: 800;
   --fw-black: 900;
 
-  --ff-global: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-  --fs-global: 16px;
+  --ff-global: 'Jost', sans-serif;
+  --fs-global: 22px;
   --fs-heading: 32px;
   --fw-heading: var(--fw-semibold);
 
+  --s-xxs: 2px;
   --s-xs: 4px;
   --s-sm: 8px;
   --s-md: 16px;
@@ -31,7 +32,11 @@
   --s-xxl: 40px;
   --s-xxxl: 48px;
 
-  --br-base: 8px;
+  --br-rounded: 9999px;
+  --br-base: var(--br-rounded);
 
-  --w-grid: 920px;
+  --w-grid: 1608px;
+  --w-grid-narrow: 860px;
+
+  --p-gutter: var(--s-md);
 }

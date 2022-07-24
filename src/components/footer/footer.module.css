@@ -1,0 +1,7 @@
+.footer {
+  --bg-footer: var(--c-gray-light);
+
+  background: var(--bg-footer);
+  padding: var(--s-xl) var(--s-md);
+  width: 100%;
+}

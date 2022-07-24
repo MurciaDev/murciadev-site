@@ -1,7 +1,9 @@
+import { type ReactElement } from 'react';
+
 import styles from './list.module.css';
 
 interface ListProps {
-  items: React.ReactElement[];
+  items: ReactElement[];
 }
 
 export default function List({ items }: ListProps) {

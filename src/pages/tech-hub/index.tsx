@@ -39,15 +39,25 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
             <p>
               Si conoces alguna empresa más o puedes poner algún dato más sobre
               las que ya existen en el listado anímate y actualiza los datos,
-              puedes hacerlo desde aquí.
+              puedes hacerlo{' '}
+              <a
+                href="https://github.com/MurciaDev/murcia-tech-hub/edit/main/companies.json"
+                target="_blank"
+                rel="noopener nofollow noreferrer"
+              >
+                desde aquí
+              </a>
+              .
             </p>
           </article>
-          <Image
-            src="/images/cloud-hub.webp"
-            alt="Nube con un hub"
-            width={520}
-            height={592}
-          />
+          <div className={styles.image}>
+            <Image
+              alt="Nube con un hub"
+              height={592}
+              src="/images/cloud-hub.webp"
+              width={520}
+            />
+          </div>
         </section>
         {companiesList.map(({ category, companies }) => (
           <div key={category}>
@@ -58,7 +68,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
                   <tr>
                     <th>Nombre</th>
                     <th>Remoto</th>
-                    <th>Tecnologías</th>
+                    <th>Stack</th>
                     <th>Ubicación</th>
                   </tr>
                 </thead>
@@ -79,7 +89,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
                           {remoteWork ? remoteDictionary[remoteWork] : '?'}
                         </td>
                         <td>{stack || '?'}</td>
-                        <td>
+                        <td width="50%">
                           {address && location ? (
                             <>
                               {location}.{' '}
@@ -108,8 +118,9 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
       <Container design="narrow">
         <div className={styles.contribution}>
           <p>
-            Si conoces alguna empresa más o puedes poner algún dato más sobre
-            las que ya existen en el listado anímate y actualiza la información.
+            Si conoces alguna empresa más o puedes añadir algún dato más sobre
+            las que ya existen en el listado, anímate y actualiza la
+            información.
           </p>
           <Button
             as="a"
@@ -117,7 +128,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
             target="_blank"
             rel="noopener nofollow noreferrer"
           >
-            Editar esta página
+            ¡Edita esta página!
           </Button>
         </div>
       </Container>

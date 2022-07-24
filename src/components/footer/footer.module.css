@@ -2,10 +2,23 @@
   --bg-footer: var(--c-gray-light);
 
   background: var(--bg-footer);
-  padding: var(--s-xl) var(--s-md);
   width: 100%;
   font-size: 18px;
   line-height: 22px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: var(--w-grid);
+  padding: var(--s-xl) var(--p-gutter);
+}
+
+@media (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
 }
 
 .logo {
@@ -14,17 +27,11 @@
 }
 
 .logo svg {
-  width: 240px;
+  width: 180px;
   height: auto;
 }
 
-.container {
-  display: flex;
-  justify-content: space-between;
-}
-
 .nav {
-  align-items: flex-end;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -49,4 +56,14 @@
 .item:not(:last-of-type)::after {
   content: '-';
   padding-left: var(--p-item);
+}
+
+@media (min-width: 768px) {
+  .nav {
+    align-items: flex-end;
+  }
+
+  .logo svg {
+    width: 240px;
+  }
 }

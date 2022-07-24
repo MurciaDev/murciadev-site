@@ -1,4 +1,11 @@
 .main {
-  padding: var(--s-xxxl) 0;
+  --p-main: var(--s-sm);
+  padding: var(--p-main) 0;
   width: 100%;
+}
+
+@media (min-width: 768px) {
+  .main {
+    -p-main: var(--s-xxxl);
+  }
 }

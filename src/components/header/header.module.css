@@ -3,22 +3,47 @@
 }
 
 .container {
+  --py-header: var(--s-md);
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
   margin: 0 auto;
   max-width: var(--w-grid);
-  padding: var(--s-xl) var(--p-gutter);
+  padding: var(--py-header) var(--p-gutter);
 }
 
 .logo {
   display: flex;
   margin-right: var(--s-xl);
-  margin-bottom: calc(var(--s-xxs) * -1);
+  margin-bottom: var(--s-xs);
+}
+
+.logo svg {
+  width: 200px;
+  height: auto;
 }
 
 .email {
   margin-left: auto;
   color: var(--c-gray-dark);
   font-size: 20px;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .container {
+    --py-header: var(--s-xl);
+  }
+
+  .logo {
+    margin-bottom: calc(var(--s-xxs) * -1);
+  }
+
+  .logo svg {
+    width: 320px;
+  }
+
+  .email {
+    display: inline;
+  }
 }

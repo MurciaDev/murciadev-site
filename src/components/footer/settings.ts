@@ -1,7 +1,6 @@
 import config from '@murciadev/config';
 
 export const socialLinks = [
-  { title: 'Newsletter', url: config.links.newsletter },
   { title: 'GitHub', url: config.links.github },
   { title: 'Discord', url: config.links.discord },
   { title: 'Meetup', url: config.links.meetup },

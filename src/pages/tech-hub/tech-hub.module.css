@@ -1,20 +1,20 @@
 .header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.header article {
-  flex-basis: 50%;
-  padding-top: var(--s-xxl);
+.image {
+  display: none;
 }
 
 .header article h1 {
-  font-size: 60px;
+  font-size: 32px;
 }
 
 .table_wrapper {
   border-radius: var(--br-xl);
-  overflow: hidden;
+
+  overflow-x: auto;
   border: 2px solid var(--c-gray-light);
   margin-bottom: var(--s-xxxl);
 }
@@ -52,4 +52,19 @@
   margin: var(--s-xxxl) 0;
   padding: var(--s-xxxl) 0;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .header article {
+    flex-basis: 50%;
+    padding-top: var(--s-xxl);
+  }
+
+  .header article h1 {
+    font-size: 60px;
+  }
+
+  .image {
+    display: flex;
+  }
 }

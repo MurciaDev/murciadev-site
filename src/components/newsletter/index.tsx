@@ -11,7 +11,7 @@ export default function Newsletter() {
 
   return (
     <section className={styles.wrapper}>
-      <div>
+      <div className={styles.image}>
         <Image
           src="/images/megaphone-speaker.webp"
           alt="Megáfono"

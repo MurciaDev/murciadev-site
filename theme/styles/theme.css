@@ -43,4 +43,13 @@
   --w-grid-narrow: 860px;
 
   --p-gutter: var(--s-md);
+
+  --bp--md: 768px;
+}
+
+@media (max-width: 767px) {
+  :root {
+    --fs-global: 20px;
+    --lh-global: 28px;
+  }
 }

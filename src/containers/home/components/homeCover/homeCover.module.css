@@ -2,13 +2,23 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: var(--s-xxxl);
-  padding: var(--s-xxxl) 136px;
+  padding: var(--s-xxxl) 0;
 }
 
 .article {
-  flex-basis: 50%;
+  margin-right: var(--p-gutter);
 }
 
 .article p:last-of-type {
   margin-bottom: var(--s-xxxl);
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    padding: var(--s-xxxl) 136px;
+  }
+
+  .article {
+    flex-basis: 50%;
+  }
 }

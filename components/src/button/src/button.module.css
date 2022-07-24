@@ -4,7 +4,7 @@
   --c-button: var(--c-white);
   --fs-button: var(--fs-global);
   --fw-button: var(--fw-semibold);
-  --p-button: var(--s-lg) var(--s-xxl);
+  --p-button: var(--s-md) var(--s-xl);
 
   background: var(--bg-button);
   border-radius: var(--br-button);
@@ -28,4 +28,10 @@
 }
 .button--secondary:hover {
   --bg-button: var(--c-primary-dark);
+}
+
+@media (min-width: 768px) {
+  .button {
+    --p-button: var(--s-lg) var(--s-xxl);
+  }
 }

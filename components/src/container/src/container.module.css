@@ -1,7 +1,9 @@
 .container {
   --mw-container: var(--w-grid);
+
   margin: 0 auto;
   max-width: var(--mw-container);
+  padding: 0 var(--p-gutter);
   width: 100%;
 }
 

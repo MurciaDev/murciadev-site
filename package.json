@@ -3,37 +3,38 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "workspaces": [
-    "components/**",
-    "config",
-    "theme"
-  ],
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7.9"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "lint:fix": "next lint --fix",
-    "phoenix": "pnpm -r exec -- pnpm dlx rimraf node_modules && pnpm dlx rimraf node_modules pnpm-lock.yaml && pnpm install"
+    "ts:check": "tsc --incremental --noEmit",
+    "install:clean": "pnpm -r exec -- pnpm dlx rimraf node_modules && pnpm dlx rimraf node_modules pnpm-lock.yaml && pnpm install"
   },
   "dependencies": {
     "@murciadev/components": "workspace:*",
     "@murciadev/config": "workspace:*",
     "@murciadev/theme": "workspace:*",
     "markdown-service": "0.1.2",
-    "next": "12.2.3",
-    "next-transpile-modules": "9.0.0",
+    "next": "13.0.5",
+    "next-transpile-modules": "10.0.0",
+    "node-fetch": "3.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/css-modules": "1.0.2",
-    "@types/node": "18.0.6",
-    "@types/react": "18.0.15",
-    "@types/react-dom": "18.0.6",
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3",
-    "prettier": "2.7.1",
-    "typescript": "4.7.4"
+    "@types/node": "18.11.9",
+    "@types/react": "18.0.25",
+    "@types/react-dom": "18.0.9",
+    "eslint": "8.28.0",
+    "eslint-config-next": "13.0.5",
+    "prettier": "2.8.0",
+    "typescript": "4.9.3"
   }
 }

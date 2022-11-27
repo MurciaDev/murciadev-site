@@ -21,11 +21,6 @@
   text-align: center;
 }
 
-.table_link {
-  color: var(--c-gray-dark);
-  font-size: 20px;
-}
-
 @media (min-width: 48rem) {
   .header {
     flex-direction: row;

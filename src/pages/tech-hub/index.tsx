@@ -1,53 +1,23 @@
 import Image from 'next/image';
 import config from '@murciadev/config';
-import { Container, Button, Table } from '@murciadev/components';
+import { Container, Button } from '@murciadev/components';
+
+import fetch from 'node-fetch';
 
 import Newsletter from '../../components/newsletter';
 import imageCloudHub from '../../../public/images/cloud-hub.webp';
 import styles from './tech-hub.module.css';
 
-import { remoteDictionary, columns } from './settings';
-
-type company = {
-  address: string | null;
-  location: string | null;
-  name: string;
-  remoteWork: 'FULL' | 'FLEX' | 'NONE' | null;
-  stack: string | null;
-  url: string;
-};
+import TechHubTable, {
+  type Company,
+} from '../../components/tech-hub/tech-hub-table';
 
 interface PageTechHubProps {
-  companiesList: { category: string; companies: company[] }[];
+  companiesList: {
+    category: string;
+    companies: Company[];
+  }[];
 }
-
-const formatTableRow = ({
-  address,
-  location,
-  name,
-  remoteWork,
-  stack,
-  url,
-}: company) => ({
-  name: (
-    <a href={url} rel="noreferrer nofollow" target="_blank">
-      {name}
-    </a>
-  ),
-  remote: remoteWork ? remoteDictionary[remoteWork] : '?',
-  stack: stack || '?',
-  location: location || '?',
-  address: address && (
-    <a
-      className={styles.table_link}
-      href={`https://www.google.com/maps/search/${address}`}
-      rel="noreferrer nofollow"
-      target="_blank"
-    >
-      Ver dirección →
-    </a>
-  ),
-});
 
 export default function PageTechHub({ companiesList }: PageTechHubProps) {
   return (
@@ -83,11 +53,12 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
             />
           </div>
         </section>
-        {companiesList.map(({ category, companies }) => (
-          <div key={category}>
-            <h2>{category}</h2>
-            <Table columns={columns} rows={companies.map(formatTableRow)} />
-          </div>
+        {companiesList?.map(({ category, companies }) => (
+          <TechHubTable
+            category={category}
+            companies={companies}
+            key={category}
+          />
         ))}
       </Container>
       <Container design="narrow">

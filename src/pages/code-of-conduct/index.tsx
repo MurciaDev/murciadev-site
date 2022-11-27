@@ -1,3 +1,4 @@
+// @ts-ignore
 import markdownService from 'markdown-service';
 import config from '@murciadev/config';
 import ContainerStatic, {

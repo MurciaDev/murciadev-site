@@ -1,12 +1,15 @@
 /** @type {import('next').NextConfig} */
-const withTM = require('next-transpile-modules')(['@murciadev/components']);
-
-module.exports = {};
 
 const nextConfig = {
-  eslint: { ignoreDuringBuilds: true },
-  typescript: { ignoreBuildErrors: true },
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  swcMinify: true,
   reactStrictMode: true,
+  poweredByHeader: false,
 };
 
-module.exports = withTM(nextConfig);
+module.exports = nextConfig;

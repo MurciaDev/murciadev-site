@@ -1,10 +1,12 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
+
+concurrency:
+  group: ci-pr-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -16,13 +18,13 @@ jobs:
       - name: Install `Node.js`
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install `pnpm`
         uses: pnpm/action-setup@v2
         id: pnpm-install
         with:
-          version: 7
+          version: 7.9
           run_install: false
 
       - name: Get `pnpm` store directory
@@ -45,8 +47,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Lint files
+      - name: Linting files
         run: pnpm run lint
+
+      - name: Validation of types
+        run: pnpm run ts:check
 
       - name: Generate build
         run: pnpm run build

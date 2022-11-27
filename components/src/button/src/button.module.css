@@ -30,7 +30,7 @@
   --bg-button: var(--c-primary-dark);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .button {
     --p-button: var(--s-lg) var(--s-xxl);
   }

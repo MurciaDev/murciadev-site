@@ -46,6 +46,7 @@ importers:
       '@murciadev/ui-container': workspace:*
       '@murciadev/ui-list': workspace:*
       '@murciadev/ui-logo': workspace:*
+      '@murciadev/ui-table': workspace:*
       classnames: 2.3.1
     dependencies:
       '@murciadev/config': link:../config
@@ -53,6 +54,7 @@ importers:
       '@murciadev/ui-container': link:src/container
       '@murciadev/ui-list': link:src/list
       '@murciadev/ui-logo': link:src/logo
+      '@murciadev/ui-table': link:src/table
       classnames: 2.3.1
 
   components/src/button:
@@ -65,6 +67,9 @@ importers:
     specifiers: {}
 
   components/src/logo:
+    specifiers: {}
+
+  components/src/table:
     specifiers: {}
 
   config:

@@ -16,7 +16,7 @@
   padding: var(--s-xl) var(--p-gutter);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .container {
     flex-direction: row;
   }
@@ -59,7 +59,7 @@
   padding-left: var(--p-item);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .nav {
     align-items: flex-end;
   }

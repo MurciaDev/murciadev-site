@@ -14,7 +14,12 @@ export default function Newsletter() {
   return (
     <section className={styles.wrapper}>
       <div className={styles.image}>
-        <Image src={imageMegaphoneSpeaker} alt="Megáfono" />
+        <Image
+          src={imageMegaphoneSpeaker}
+          alt="Megáfono"
+          width={420}
+          height={440}
+        />
       </div>
       <article className={styles.article}>
         <p>

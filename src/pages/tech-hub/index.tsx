@@ -1,10 +1,12 @@
 import Image from 'next/image';
 import config from '@murciadev/config';
-import { Container, Button } from '@murciadev/components';
+import { Container, Button, Table } from '@murciadev/components';
 
 import Newsletter from '../../components/newsletter';
 import imageCloudHub from '../../../public/images/cloud-hub.webp';
 import styles from './tech-hub.module.css';
+
+import { remoteDictionary, columns } from './settings';
 
 type company = {
   address: string | null;
@@ -19,11 +21,33 @@ interface PageTechHubProps {
   companiesList: { category: string; companies: company[] }[];
 }
 
-const remoteDictionary = {
-  FLEX: 'Flexible',
-  FULL: '100%',
-  NONE: 'No',
-};
+const formatTableRow = ({
+  address,
+  location,
+  name,
+  remoteWork,
+  stack,
+  url,
+}: company) => ({
+  name: (
+    <a href={url} rel="noreferrer nofollow" target="_blank">
+      {name}
+    </a>
+  ),
+  remote: remoteWork ? remoteDictionary[remoteWork] : '?',
+  stack: stack || '?',
+  location: location || '?',
+  address: address && (
+    <a
+      className={styles.table_link}
+      href={`https://www.google.com/maps/search/${address}`}
+      rel="noreferrer nofollow"
+      target="_blank"
+    >
+      Ver dirección →
+    </a>
+  ),
+});
 
 export default function PageTechHub({ companiesList }: PageTechHubProps) {
   return (
@@ -51,62 +75,18 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
             </p>
           </article>
           <div className={styles.image}>
-            <Image alt="Nube con un hub" src={imageCloudHub} />
+            <Image
+              alt="Nube con un hub"
+              src={imageCloudHub}
+              width={520}
+              height={592}
+            />
           </div>
         </section>
         {companiesList.map(({ category, companies }) => (
           <div key={category}>
             <h2>{category}</h2>
-            <div className={styles.table_wrapper}>
-              <table className={styles.table}>
-                <thead>
-                  <tr>
-                    <th>Nombre</th>
-                    <th>Remoto</th>
-                    <th>Stack</th>
-                    <th>Ubicación</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  {companies.map(
-                    ({ address, location, name, remoteWork, stack, url }) => (
-                      <tr key={name}>
-                        <td width="30%">
-                          <a
-                            href={url}
-                            rel="noreferrer nofollow"
-                            target="_blank"
-                          >
-                            {name}
-                          </a>
-                        </td>
-                        <td>
-                          {remoteWork ? remoteDictionary[remoteWork] : '?'}
-                        </td>
-                        <td>{stack || '?'}</td>
-                        <td>
-                          {address && location ? (
-                            <>
-                              {location}.{' '}
-                              <a
-                                className={styles.table_link}
-                                href={`https://www.google.com/maps/search/${address}`}
-                                rel="noreferrer nofollow"
-                                target="_blank"
-                              >
-                                Ver dirección →
-                              </a>
-                            </>
-                          ) : (
-                            '?'
-                          )}
-                        </td>
-                      </tr>
-                    )
-                  )}
-                </tbody>
-              </table>
-            </div>
+            <Table columns={columns} rows={companies.map(formatTableRow)} />
           </div>
         ))}
       </Container>
@@ -136,6 +116,7 @@ export default function PageTechHub({ companiesList }: PageTechHubProps) {
 
 export async function getStaticProps() {
   const apiUrl = `${config.GITHUB.REPOSITORY_RAW_URL}/murcia-tech-hub/main/companies.json`;
+
   const response = await fetch(apiUrl);
   const companiesList = await response.json();
 

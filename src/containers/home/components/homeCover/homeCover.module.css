@@ -13,9 +13,9 @@
   margin-bottom: var(--s-xxxl);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .wrapper {
-    padding: var(--s-xxxl) 136px;
+    padding: var(--s-xxxl) 0;
   }
 
   .article {

@@ -20,38 +20,38 @@
   --fw-black: 900;
 
   --ff-global: 'Jost', sans-serif;
-  --fs-global: 22px;
-  --lh-global: 32px;
+  --fs-global: 1.5rem;
+  --lh-global: 2rem;
 
-  --fs-heading: 32px;
-  --lh-heading: 40px;
+  --fs-heading: 2rem;
+  --lh-heading: 2.5rem;
   --fw-heading: var(--fw-semibold);
 
-  --s-xxs: 2px;
-  --s-xs: 4px;
-  --s-sm: 8px;
-  --s-md: 16px;
-  --s-lg: 24px;
-  --s-xl: 32px;
-  --s-xxl: 40px;
-  --s-xxxl: 48px;
+  --s-xxs: 0.12rem;
+  --s-xs: 0.25rem;
+  --s-sm: 0.5rem;
+  --s-md: 1rem;
+  --s-lg: 1.5rem;
+  --s-xl: 2rem;
+  --s-xxl: 1.5rem;
+  --s-xxxl: 3rem;
 
   --br-rounded: 9999px;
   --br-xl: var(--s-xl);
   --br-base: var(--br-rounded);
 
-  --w-grid: 1608px;
-  --w-grid-inner: 1286px;
-  --w-grid-narrow: 860px;
+  --w-grid: 100rem;
+  --w-grid-inner: 80rem;
+  --w-grid-narrow: 54rem;
 
   --p-gutter: var(--s-md);
 
-  --bp--md: 768px;
+  --bp--md: 48rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 47.938rem) {
   :root {
-    --fs-global: 20px;
-    --lh-global: 28px;
+    --fs-global: 1.25rem;
+    --lh-global: 1.75rem;
   }
 }

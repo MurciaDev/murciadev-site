@@ -2,6 +2,7 @@
   background: var(--c-gray-light);
   border-radius: var(--s-xl);
   display: flex;
+  gap: var(--p-gutter);
   justify-content: space-around;
   margin: var(--s-xl) 0;
   padding: var(--s-lg);
@@ -19,7 +20,7 @@
   display: none;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .wrapper {
     padding: var(--s-xxxl);
   }
@@ -29,7 +30,7 @@
   }
 
   .image {
-    display: flex;
+    display: block;
   }
 
   .article p:first-of-type {

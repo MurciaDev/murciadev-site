@@ -1,0 +1,30 @@
+.wrapper {
+  border-radius: var(--br-xl);
+  overflow-x: auto;
+  border: 2px solid var(--c-gray-light);
+  margin-bottom: var(--s-xxxl);
+}
+
+.table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table thead {
+  background: var(--c-gray-light);
+  text-align: left;
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--c-gray-light);
+}
+
+.table tbody tr:hover {
+  background: var(--c-gray-medium);
+}
+
+.table td,
+.table th {
+  padding: var(--s-md) var(--s-xl);
+  white-space: nowrap;
+}

@@ -1,11 +1,11 @@
 .main {
-  --p-main: var(--s-sm);
-  padding: var(--p-main) 0;
+  --p-main: var(--s-sm) 0;
+  padding: var(--p-main);
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .main {
-    -p-main: var(--s-xxxl);
+    --p-main: var(--s-xxxl) 0;
   }
 }

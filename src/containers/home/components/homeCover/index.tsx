@@ -27,6 +27,8 @@ export default function ContainerHomeCover() {
         <Image
           alt="Persona con un ordenador portátil sentada en un sillón"
           src={imageCharacterLaptop}
+          width={500}
+          height={686}
         />
       </div>
     </section>

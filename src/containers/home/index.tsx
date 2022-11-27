@@ -5,9 +5,13 @@ import Newsletter from '../../components/newsletter';
 
 export default function ContainerHome() {
   return (
-    <Container>
-      <ContainerHomeCover />
-      <Newsletter />
-    </Container>
+    <>
+      <Container design="inner">
+        <ContainerHomeCover />
+      </Container>
+      <Container>
+        <Newsletter />
+      </Container>
+    </>
   );
 }

@@ -3,11 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "private": true,
-  "workspaces": [
-    "components/**",
-    "config",
-    "theme"
-  ],
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=7.9"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",

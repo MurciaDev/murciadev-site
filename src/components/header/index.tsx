@@ -13,10 +13,8 @@ export default function Header() {
   return (
     <header className={styles.header}>
       <div className={styles.container}>
-        <Link href="/" passHref>
-          <a className={styles.logo}>
-            <Logo />
-          </a>
+        <Link href="/" className={styles.logo}>
+          <Logo />
         </Link>
         <Menu />
         <a className={styles.email} href={`mailto:${email}`}>

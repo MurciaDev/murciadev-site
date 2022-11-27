@@ -1,8 +1,6 @@
 name: CI
 
 on:
-  push:
-    branches: [main]
   pull_request:
     branches: [main]
 
@@ -16,7 +14,7 @@ jobs:
       - name: Install `Node.js`
         uses: actions/setup-node@v3
         with:
-          node-version: 16
+          node-version: 18
 
       - name: Install `pnpm`
         uses: pnpm/action-setup@v2
@@ -45,8 +43,11 @@ jobs:
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
 
-      - name: Lint files
+      - name: Linting files
         run: pnpm run lint
+
+      - name: Validation of types
+        run: pnpm run ts:check
 
       - name: Generate build
         run: pnpm run build

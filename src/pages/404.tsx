@@ -19,7 +19,7 @@ export default function Page404() {
         </div>
         <h1 className={styles.title}>¡Achooo! ¿Ánde vas?</h1>
         <span className={styles.subtitle}>Error 404</span>
-        <Link href="/" passHref>
+        <Link href="/" passHref legacyBehavior>
           <Button as="a">Volver a la página de inicio</Button>
         </Link>
       </Container>

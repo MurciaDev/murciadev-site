@@ -23,9 +23,7 @@ export default function Menu() {
       <ul className={styles.list}>
         {menuRoutes.map(({ url, title }) => (
           <li className={styles.item} key={url}>
-            <Link href={url} passHref>
-              <a>{title}</a>
-            </Link>
+            <Link href={url}>{title}</Link>
           </li>
         ))}
       </ul>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Container, Logo } from '@murciadev/components';
+import { Logo } from '@murciadev/components';
 import config from '@murciadev/config';
 
 import styles from './footer.module.css';
@@ -14,10 +14,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div>
-          <Link href="/" passHref>
-            <a className={styles.logo}>
-              <Logo />
-            </a>
+          <Link href="/" className={styles.logo}>
+            <Logo />
           </Link>
           <a href={`mailto:${email}`}>{email}</a>
         </div>
@@ -38,9 +36,7 @@ export default function Footer() {
           <ul className={styles.list}>
             {legalLinks.map(({ url, title }) => (
               <li className={styles.item} key={url}>
-                <Link href={url} passHref>
-                  <a>{title}</a>
-                </Link>
+                <Link href={url}>{title}</Link>
               </li>
             ))}
           </ul>

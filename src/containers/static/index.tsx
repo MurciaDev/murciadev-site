@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import { Container } from '@murciadev/components';
-import Newsletter from '../../components/newsletter';
+import Newsletter from '../../components/callToAction';
 
 export interface ContainerStaticProps {
   head?: { [key: string]: string } | null;

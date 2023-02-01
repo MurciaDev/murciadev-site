@@ -4,7 +4,7 @@ import { Container, Button } from '@murciadev/components';
 
 import fetch from 'node-fetch';
 
-import Newsletter from '../../components/newsletter';
+import Newsletter from '../../components/callToAction';
 import imageCloudHub from '../../../public/images/cloud-hub.webp';
 import styles from './tech-hub.module.css';
 

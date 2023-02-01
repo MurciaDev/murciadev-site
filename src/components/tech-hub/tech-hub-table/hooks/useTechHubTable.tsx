@@ -24,7 +24,6 @@ export default function useTechHubTable({ companies }: UseTechHubTableProps) {
     () => [
       { label: 'Nombre' },
       { label: 'Remoto' },
-      { label: 'Stack' },
       { label: 'Ubicación' },
       { label: '' },
     ],
@@ -40,7 +39,6 @@ export default function useTechHubTable({ companies }: UseTechHubTableProps) {
           </a>
         ),
         remote: remoteWork ? remoteDictionary[remoteWork] : '?',
-        stack: stack || '?',
         location: location || '?',
         address: address && (
           <a

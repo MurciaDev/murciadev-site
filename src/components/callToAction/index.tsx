@@ -2,13 +2,13 @@ import Image from 'next/image';
 import config from '@murciadev/config';
 import { Button } from '@murciadev/components';
 
-import styles from './newsletter.module.css';
+import styles from './callToAction.module.css';
 
 import imageMegaphoneSpeaker from '../../../public/images/megaphone-speaker.webp';
 
 export default function Newsletter() {
   const {
-    links: { newsletter },
+    links: { discord },
   } = config;
 
   return (
@@ -30,15 +30,15 @@ export default function Newsletter() {
         </p>
         <p>
           Si quieres estar al tanto de todas las novedades que hacemos y estamos
-          preparando, ¡tenemos una newsletter muy molona!
+          preparando...
         </p>
         <Button
           as="a"
-          href={newsletter}
+          href={discord}
           target="_blank"
           rel="noopener nofollow"
         >
-          ¡Suscríbete a nuestra newsletter!
+          ¡Únete a nuestro Discord!
         </Button>
       </article>
     </section>

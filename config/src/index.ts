@@ -9,9 +9,8 @@ const config = {
     discord: 'https://discord.com/invite/c7CzDtc47U',
     github: 'https://github.com/MurciaDev',
     meetup: 'https://www.meetup.com/es-ES/murciadev',
-    newsletter: 'https://www.getrevue.co/profile/murciadev',
     twitter: 'https://twitter.com/MurciaDev',
   },
-};
+} as const;
 
 export default config;

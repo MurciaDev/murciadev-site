@@ -1,7 +1,7 @@
 import { Container } from '@murciadev/components';
 
 import ContainerHomeCover from './components/homeCover';
-import Newsletter from '../../components/newsletter';
+import CallToAction from '../../components/callToAction';
 
 export default function ContainerHome() {
   return (
@@ -10,7 +10,7 @@ export default function ContainerHome() {
         <ContainerHomeCover />
       </Container>
       <Container>
-        <Newsletter />
+        <CallToAction />
       </Container>
     </>
   );

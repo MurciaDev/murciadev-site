@@ -1,6 +1,4 @@
 .wrapper {
-  display: flex;
-  justify-content: space-around;
   margin-bottom: var(--s-xxxl);
   padding: var(--s-xxxl) 0;
 }
@@ -9,12 +7,20 @@
   margin-right: var(--p-gutter);
 }
 
+.illustration {
+  max-width: 100%;
+  height: auto;
+  padding: 2rem;
+}
+
 .article p:last-of-type {
   margin-bottom: var(--s-xxxl);
 }
 
 @media (min-width: 48rem) {
   .wrapper {
+    display: flex;
+    justify-content: space-around;
     padding: var(--s-xxxl) 0;
   }
 

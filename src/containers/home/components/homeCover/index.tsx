@@ -25,6 +25,7 @@ export default function ContainerHomeCover() {
       </article>
       <div>
         <Image
+          className={styles.illustration}
           alt="Persona con un ordenador portátil sentada en un sillón"
           src={imageCharacterLaptop}
           width={500}
